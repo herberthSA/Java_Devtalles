@@ -1,4 +1,4 @@
-package Varaibles;
+package Variables;
 
 public class PracticaConstante {
     public static void main(String[] args) {

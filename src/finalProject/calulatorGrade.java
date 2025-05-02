@@ -8,8 +8,4 @@ public class calulatorGrade {
         System.out.println();
         Scanner scanner = new Scanner(System.in);
     }
-
-
-
-
 }

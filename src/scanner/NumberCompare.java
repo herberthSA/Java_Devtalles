@@ -1,13 +1,22 @@
 package scanner;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class NumberCompare {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese un numero");
+        List<String> list = new ArrayList<>();
+        list.add("Lucas");
+        list.add("Juan");
+        list.add("Herberth");
+        list.add("Pedro");
+        list.add("Monica");
 
-        int a = sc.nextInt();
-        System.out.println("Imprimir A:" + a);
+        List<String> a = list.stream()
+                .map(String::toUpperCase)
+                .map(nombre -> nombre.replace("E", "3")) // ejemplo de transformación
+                .toList();
+
+        a.forEach(System.out::println);
     }
 }
